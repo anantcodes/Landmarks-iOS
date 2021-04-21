@@ -12,7 +12,12 @@ struct ContentView: View {
         
         VStack{
             MapView()
+                .ignoresSafeArea(edges: .top)
                 .frame(height: 300)
+            
+            CircleImage()
+                .offset(y: -130)
+                .padding(.bottom, -130)
             
             VStack(alignment: .leading){
                 Text("Lucknow")
@@ -26,6 +31,8 @@ struct ContentView: View {
                 }
             }
             .padding()
+            
+            Spacer()
         }
     }
 }
