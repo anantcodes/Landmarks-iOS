@@ -10,6 +10,10 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         
+        VStack{
+            MapView()
+                .frame(height: 300)
+            
             VStack(alignment: .leading){
                 Text("Lucknow")
                     .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
@@ -22,6 +26,7 @@ struct ContentView: View {
                 }
             }
             .padding()
+        }
     }
 }
 
