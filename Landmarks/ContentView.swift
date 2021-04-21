@@ -29,6 +29,14 @@ struct ContentView: View {
                     Text("India")
                         .font(.subheadline)
                 }
+                .font(.subheadline)
+                .foregroundColor(.secondary)
+
+                Divider()
+
+                Text("About Lucknow")
+                    .font(.title2)
+                Text("The Nawabs of Lucknow, in reality, the Nawabs of Awadh, acquired the name after the reign of the third Nawab when Lucknow became their capital. ")
             }
             .padding()
             
