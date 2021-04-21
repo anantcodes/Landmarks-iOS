@@ -9,9 +9,19 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Lucknow")
-            .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
-            .foregroundColor(.green)
+        
+            VStack(alignment: .leading){
+                Text("Lucknow")
+                    .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
+                HStack{
+                    Text("Uttar Pradesh")
+                        .font(.subheadline)
+                    Spacer()
+                    Text("India")
+                        .font(.subheadline)
+                }
+            }
+            .padding()
     }
 }
 
